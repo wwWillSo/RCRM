@@ -308,7 +308,7 @@ public class UserController {
 			map.put("allUsers", allUsers) ;
 			map.put("pageNo", pageNo) ;
 			
-			return "/systemSettings/userFile" ;
+			return "/views/systemSettings/userFile" ;
 		}
 	}
 }
