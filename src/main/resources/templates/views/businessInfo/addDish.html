@@ -1,0 +1,61 @@
+<!DOCTYPE html>  
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>CRM</title>
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="/plugins/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+	
+	<!-- 自定义的css -->
+	<link rel="stylesheet" href="/css/global.css"/>
+	<link rel="stylesheet" href="/css/businessInfo/businessInfo.css"/>
+</head>
+<body>
+	<!-- 定义面板 -->
+	<div class="panel panel-default panel-primary">
+		<!-- 面板头部 -->
+		<div class="panel-heading">
+			<h1 class="text-center">客户关系管理系统</h1>
+			<p class="text-center">Customer Relationship Management</p>
+		</div>
+		<!-- 面板主体 -->
+		<div class="panel-body">
+			<form role="form" class="col-md-4 col-md-offset-4" action="" method="post" id="addDishForm">
+				<div class="form-group">
+	       			<label for="dishId">菜式代号</label>
+	       			<input type="text" class="form-control" id="dishId" name="dishId" placeholder="菜式代号"/>
+	       		</div>
+	       		<div class="form-group">
+	       			<label for="dishName">菜式名称</label>
+	       			<input type="text" class="form-control" id="dishName" name="dishName" placeholder="菜式名称"/>
+	       		</div>
+	       		<div class="form-group">
+	       			<label for="菜式类型">菜式类型</label>
+	       			<select id="dishType" name="dishType">
+	       				<option value="中餐">中餐</option>
+	       				<option value="西餐">西餐</option>
+	       			</select>
+   	    		</div>
+   	    		<div class="form-group">
+	       			<label for="price">价格</label>
+	       			<input type="text" class="form-control" id="price" name="price" placeholder="价格"/>
+	       		</div>
+	       		<button class="btn btn-default" id="addDishButton">添加</button>
+	       		<button class="btn btn-default" onClick="history.go(-1)">返回</button>
+     	  </form>
+		</div>
+		<!-- 面板底部 -->
+		<div class="panel-footer">
+		
+		</div>
+	</div>
+
+	
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="/plugins/jquery/jquery-1.11.3.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="/plugins/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	<!-- 自己的js -->
+	<script src="/js/businessInfo/businessInfo.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+.tableContainer {
+	height : 80% ;
+}
+
+.pageSearchContainer {
+	height : 20% ;
+/* 	background-color: red ; */
+}
+
+.tableContainer td {
+	text-align: center ;
+}
+
+.pageSearchContainer nav {
+	position : relatice ;
+	float : right ;
+/* 	background-color : red ; */
+}

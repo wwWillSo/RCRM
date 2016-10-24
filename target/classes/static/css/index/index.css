@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+
+.panel {
+	height : 100%
+}
+
+.panel-heading {
+	height : 20% ;
+/* 	background-image : url('/images/index_jumbotron_bg.jpg') ; */
+}
+
+.panel-body {
+	height : 70%
+}
+
+.panel-body .jumbotron {
+	height : 100%;
+	background-image : url('/images/index_jumbotron_bg.jpg') ;
+}
+
+.panel-body .jumbotron .btn{
+	background-color : DimGrey ;
+}
+
+.panel-footer {
+	height : 10% ;
+	background-color : black ;
+}

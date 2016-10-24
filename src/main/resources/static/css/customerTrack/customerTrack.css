@@ -1,0 +1,45 @@
+
+
+
+
+.list-group-item {
+	height : 15% ;
+	border : 0px ;
+	margin-bottom : 30px ;
+}
+
+.list-group-item img{
+	width : 50px ;
+	display : inline ;
+}
+
+.list-group-item font{
+	font-size : 250% ;
+	margin-left : 20% ;
+	border : 5px solid black ;
+	-moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;            /* W3C syntax */
+}
+
+
+
+
+.tableContainer {
+	height : 80% ;
+}
+
+.pageSearchContainer {
+	height : 20% ;
+/* 	background-color: red ; */
+}
+
+.tableContainer td {
+	text-align: center ;
+}
+
+.pageSearchContainer nav {
+	position : relatice ;
+	float : right ;
+/* 	background-color : red ; */
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>  
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>CRM</title>
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="/plugins/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+	
+	<!-- 自定义的css -->
+	<link rel="stylesheet" href="/css/global.css"/>
+	<link rel="stylesheet" href="/css/index/index.css"/>
+</head>
+<body>
+	<!-- 定义面板 -->
+	<div class="panel panel-default panel-primary">
+		<!-- 面板头部 -->
+		<div class="panel-heading">
+			<h1 class="text-center">客户关系管理系统</h1>
+			<p class="text-center">Customer Relationship Management</p>
+		</div>
+		<!-- 面板主体 -->
+		<div class="panel-body">
+			<div class="jumbotron">
+			    <div class="container">
+			        <h1>欢迎登陆！</h1>
+			       		 <p><a class="btn btn-primary btn-lg" role="button">
+			        		进入系统</a>			
+				      	  </p>
+				   	<div class="loginFormContainer">
+		      	  		<form role="form" class="col-md-5" action="/userLogin" method="post" id="loginForm">
+		      	  			<input type="hidden" id="loginResult" th:value="${#httpServletRequest.getAttribute('loginResult')}"/>
+			        		<div class="form-group">
+			        			<label for="username">用户名</label>
+			        			<input type="text" class="form-control" id="username" name="username" placeholder="用户名"/>
+			        		</div>
+			        		<div class="form-group">
+			        			<label for="password">密码</label>
+			        			<input type="password" class="form-control" id="password" name="password" placeholder="密码"/>
+			    	    		</div>
+			        		<button type="button" class="btn btn-default login-submit">登录</button>
+			        		<button type="button" class="btn btn-default goto-regist">注册</button>
+			      	  </form>
+			        </div>
+			        <div class="registFormContainer">
+		      	  		<form role="form" class="col-md-5" action="/userRegist" method="post" id="registForm">
+		      	  			<input type="hidden" id="registResult" th:value="${#httpServletRequest.getAttribute('registResult')}"/>
+			        		<div class="form-group">
+			        			<label for="username">用户名</label>
+			        			<input type="text" class="form-control" id="username" name="username" placeholder="用户名"/>
+			        		</div>
+			        		<div class="form-group">
+			        			<label for="password">密码</label>
+			        			<input type="password" class="form-control" id="password" name="password" placeholder="密码"/>
+			    	    		</div>
+			        		<button type="button" class="btn btn-default regist-submit">注册</button>
+			        		<button type="button" class="btn btn-default goto-login">返回登录</button>
+			      	  </form>
+			        </div>
+			    </div>
+			</div>
+		</div>
+		<!-- 面板底部 -->
+		<div class="panel-footer">
+		
+		</div>
+	</div>
+
+	
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="/plugins/jquery/jquery-1.11.3.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="/plugins/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	<!-- 自己的js -->
+	<script src="/js/index/index.js"></script>
+</body>
+</html>

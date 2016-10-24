@@ -1,0 +1,66 @@
+<!DOCTYPE html>  
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>CRM</title>
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="/plugins/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+	
+	<!-- 自定义的css -->
+	<link rel="stylesheet" href="/css/global.css"/>
+	<link rel="stylesheet" href="/css/userFile/userFile.css"/>
+</head>
+<body>
+	<!-- 定义面板 -->
+	<div class="panel panel-default panel-primary">
+		<!-- 面板头部 -->
+		<div class="panel-heading">
+			<h1 class="text-center">客户关系管理系统</h1>
+			<p class="text-center">Customer Relationship Management</p>
+		</div>
+		<!-- 面板主体 -->
+		<div class="panel-body">
+			<div class="tableContainer col-md-8 col-md-offset-2">
+			<input type="hidden" id="addCustomerResult" th:value="${addCustomerResult}"/>
+				<table class="table table-hover table-striped text-center table-bordered">
+					<tr>
+						<td>用户名</td>
+						<td>等级</td>
+					</tr>
+					<tr th:each="user : ${allUsers}">
+						<td th:text="${user.username}"></td>
+						<td th:text="${uer.role}"></td>
+					</tr>
+				</table>
+			</div>
+			<div class="pageSearchContainer col-md-8 col-md-offset-2">
+<!-- 				<button class="btn btn-default" id="addUser">添加客户</button> -->
+				<button class="btn btn-default" onClick="history.go(-1)">返回</button>
+				<nav>
+ 				 <ul class="pagination">
+				    <li><a href="#">&laquo;</a></li>
+ 				  	<li><a href="#">1</a></li>
+ 				 	<li><a href="#">2</a></li>
+  					<li><a href="#">3</a></li>
+   					<li><a href="#">4</a></li>
+   				 	<li><a href="#">5</a></li>
+   					<li><a href="#">&raquo;</a></li>
+  				</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- 面板底部 -->
+		<div class="panel-footer">
+		
+		</div>
+	</div>
+
+	
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="/plugins/jquery/jquery-1.11.3.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="/plugins/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	<!-- 自己的js -->
+	<script src="/js/userFile/userFile.js"></script>
+</body>
+</html>

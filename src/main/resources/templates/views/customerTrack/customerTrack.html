@@ -1,0 +1,70 @@
+<!DOCTYPE html>  
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>CRM</title>
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="/plugins/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+	
+	<!-- 自定义的css -->
+	<link rel="stylesheet" href="/css/global.css"/>
+	<link rel="stylesheet" href="/css/customerTrack/customerTrack.css"/>
+</head>
+<body>
+	<!-- 定义面板 -->
+	<div class="panel panel-default panel-primary">
+		<!-- 面板头部 -->
+		<div class="panel-heading">
+			<h1 class="text-center">客户关系管理系统</h1>
+			<p class="text-center">Customer Relationship Management</p>
+		</div>
+		<!-- 面板主体 -->
+		<div class="panel-body">
+			<div class="button-group">
+				<div class="list-group col-md-4 col-md-offset-2">
+  					<a href="#" class="list-group-item">
+						<font class="text-center">新增业务</font>
+					</a>
+					<div class="space"></div>
+  					<a href="#" class="list-group-item">
+						<font class="text-center">预约提示</font>
+					</a>
+					<div class="space"></div>
+  					<a href="/showOrderRecord" class="list-group-item">
+						<font class="text-center">客户消费记录</font>
+					</a>
+				</div>
+				<div class="list-group col-md-4">
+  					<a href="#" class="list-group-item">
+						<font class="text-center">客户消费统计</font>
+					</a>
+					<div class="space"></div>
+  					<a href="#" class="list-group-item">
+						<font class="text-center">菜色品种统计</font>
+					</a>
+					<div class="space"></div>
+					<a href="/showCustomerExpenditure" class="list-group-item">
+						<font class="text-center">客户消费额统计</font>
+					</a>
+				</div>
+			</div>
+			
+			<div class="pageSearchContainer col-md-8 col-md-offset-2">
+				<button class="btn btn-default" onClick="history.go(-1)">返回</button>
+			</div>
+		</div>
+		<!-- 面板底部 -->
+		<div class="panel-footer">
+		
+		</div>
+	</div>
+
+	
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="/plugins/jquery/jquery-1.11.3.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="/plugins/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	<!-- 自己的js -->
+	<script src="/js/customerTrack/customerTrack.js"></script>
+</body>
+</html>
